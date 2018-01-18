@@ -8,7 +8,7 @@
 
 https://xcloud.alipay.com/
 
-https://ant-motion.github.io/experience-cloud/
+https://ant-motion.github.io/experience-cloud-landing-page/
 
 
 ## install
