@@ -1,0 +1,304 @@
+@import "./default.less";
+@import "./custom.less";
+.page {
+  &-wrapper {
+    width: 100%;
+    will-change: transform;
+  }
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 24px;
+  margin: auto;
+  overflow: hidden;
+  >h1 {
+    margin: 144px auto 32px;
+    font-size: 38px;
+    line-height: 46px;
+    color: #0d1a26;
+    font-weight: 400;
+    text-align: center;
+  }
+  >i {
+    width: 64px;
+    margin: auto;
+    height: 2px;
+    display: block;
+    background: rgb(22, 217, 227);
+    background: linear-gradient(to right, rgba(22, 217, 227, 1) 0%, rgba(22, 119, 227, 1) 100%);
+  }
+}
+
+.banner-anim {
+  &-arrow {
+    opacity: 0;
+    transition: opacity .3s @ease-out;
+  }
+  &:hover {
+    .banner-anim-arrow {
+      opacity: 1;
+    }
+  }
+}
+
+.banner {
+  background: url(https://gw.alipayobjects.com/zos/rmsportal/okhVRKJXxQpbpKGtKneS.svg) no-repeat center top;
+  background-size: contain;
+  overflow: hidden;
+  font-family: PingFang SC, Helvetica Neue For Number, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif;
+  .page {
+    max-width: 1248px;
+  }
+  .logo {
+    background: url(https://gw.alipayobjects.com/zos/rmsportal/khXpcyRYlACLokoNTzwc.svg) no-repeat;
+    width: 127px;
+    height: 110px;
+    margin: 86px auto 40px;
+  }
+  & &-anim {
+    margin: 0 auto 64px;
+    height: 600px;
+    box-shadow: 0 20px 32px rgba(1, 4, 8, .12);
+    background: #fff;
+    border-radius: 8px;
+    &-elem {
+      .banner-bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        background-position: center;
+      }
+    }
+  }
+  .seeconf {
+    &-wrap {
+      text-align: center;
+      color: @banner-text-color;
+      .banner-button {
+        margin: 64px 0 26px;
+        .ant-btn {
+          height: 35px;
+          line-height: 35px;
+          border-radius: 35px;
+          background: #2354eb;
+          box-shadow: 0 7px 13px #91a5f2;
+          padding: 0 28px;
+          font-size: 12px;
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    &-en-name {
+      margin: 140px 0 0;
+      font-size: 12px;
+      line-height: 32px;
+    }
+    &-title {
+      margin: 16px 0 24px;
+      font-size: 56px;
+      line-height: 68px;
+      text-indent: 2px;
+      font-weight: 600;
+      color: #02063D;
+    }
+    &-cn-name {
+      font-size: 18px;
+    }
+  }
+  &-button {
+    .ant-btn {
+      color: #fff;
+      border: none;
+    }
+  }
+}
+
+.page1 {
+  min-height: 720px;
+  .page {
+    >h1 {
+      margin-top: 64px;
+    }
+  }
+  &-item {
+    text-align: center;
+    margin-top: 96px;
+    &-link {
+      display: block;
+      width: 180px;
+      margin: auto;
+    }
+    &-img {
+      width: 180px;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100%;
+      background: #fff;
+      position: relative;
+      z-index: 1;
+    }
+    &-title {
+      margin-top: 56px;
+      font-size: 20px;
+      color: #0D1A26;
+    }
+    p {
+      color: #697B8C;
+      margin-top: 8px;
+    }
+  }
+  .point-wrapper {
+    position: absolute;
+    width: 0;
+    left: 50%;
+    top: 0;
+    z-index: 0;
+    .point-0 {
+      width: 4px;
+      height: 4px;
+    }
+    .point-2 {
+      width: 10px;
+      height: 10px;
+    }
+    .point-ring {
+      width: 12px;
+      height: 12px;
+      border-style: solid;
+      border-width: 1px;
+      background: transparent !important;
+    }
+    .point-ring-0 {
+      width: 4px;
+      height: 4px;
+    }
+    .point-1 {
+      width: 12px;
+      height: 12px;
+    }
+    .point-3 {
+      width: 21px;
+      height: 21px;
+    }
+    i {
+      display: inline-block;
+      border-radius: 100%;
+      position: absolute;
+      opacity: 0;
+      transform: translate(0, 30px);
+    }
+  }
+}
+
+.page2 {
+  background: url(https://gw.alipayobjects.com/zos/rmsportal/OciuRSqhtmcYCwJRJWSz.svg) no-repeat top;
+  background-size: cover;
+  min-height: 1475px;
+  text-align: center;
+  &-content {
+    margin-top: 116px;
+  }
+  h1 {
+    margin: 220px auto 32px;
+    color: #fff;
+  }
+  h4 {
+    color: #fff;
+  }
+  h4 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 24px;
+    text-shadow: 0 8px 12px #194EC1;
+  }
+  p {
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 32px;
+    color: rgba(256, 256, 256, 0.7);
+  }
+  &-item {
+    .card-style();
+    max-width: 340px;
+    border-radius: 4px;
+    height: 384px;
+    position: relative;
+    margin: auto;
+    &-wrapper {
+      margin-bottom: 48px;
+    }
+    &.full {
+      width: 100%;
+      max-width: none;
+      height: 420px;
+    }
+    &-bg {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+    &-desc {
+      padding: 59px 46px 0;
+      position: relative;
+      z-index: 1;
+    }
+    &-links {
+      margin-bottom: 58px;
+      a {
+        color: #fff;
+        margin: 0 12px;
+      }
+    }
+    .effect {
+      height: 205px;
+      background: url(https://gw.alipayobjects.com/zos/rmsportal/tGoBjrGoqlhsmCSSabgQ.svg) no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+}
+
+.page3 {
+  min-height: 1080px;
+  .page {
+    .banner-wrapper {
+      margin-top: 88px;
+    }
+    .banner-anim {
+      height: 600px;
+      video {
+        height: 600px;
+      }
+      .rh5v-Volume_icon,
+      .rh5v-Fullscreen_icon {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.page4 {
+  min-height: 664px;
+  background: #f7f7f7;
+  &-item {
+    &-wrapper {
+      margin-top: 96px;
+    }
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 68px;
+    img {
+      display: inline-block;
+    }
+  }
+}

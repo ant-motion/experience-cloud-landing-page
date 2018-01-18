@@ -1,0 +1,111 @@
+@import "./default.less";
+@media only screen and (max-width: 1440px) {
+  .banner {
+    background-size: auto 459px;
+  }
+}
+
+@media only screen and (max-width: @screen-md) {
+  .banner{
+    .banner-anim{
+      height: 472px;
+    }
+    .seeconf{
+      &-en-name{
+        margin-top: 24px;
+        transform: scale(0.75);
+        transform-origin: top center;
+      }
+      &-title{
+        margin: 4px 0 8px;
+        font-size: 26px;
+        line-height: 36px;
+      }
+      &-cn-name{
+        font-size: 12px;
+        line-height: 20px;
+      }
+      &-wrap{
+        .banner-button{
+          margin: 240px 0 16px;
+        }
+      }
+      &-time{
+        font-size: 12px;
+      }
+    }
+    
+  }
+  .page{
+    h1{
+      font-size: 28px;
+      margin: 64px 0 32px;
+    }
+  }
+  .page1{
+    min-height: 1464px;
+  }
+  .page2{
+    min-height: 2064px;
+    background: url(https://gw.alipayobjects.com/zos/rmsportal/pEjmWuMTpIaaAsCjpVhE.svg) no-repeat top;
+    background-size: cover;
+    h1{
+      margin: 107px 0 32px;
+    }
+    &-content{
+      margin-top: 72px;
+    }
+    &-item{
+      &.full{
+        max-width: 340px;
+        height: 384px;
+      }
+    }
+  }
+  .page3{
+    min-height: 270px;
+    .page{
+      padding: 0;
+      h1, i {
+        display: none;
+      }
+      .banner-wrapper{
+        margin: 0;
+        min-height: 270px;
+        .banner-anim{
+          height: 270px;
+        }
+        video{
+          height: 270px;
+        }
+      }
+    }
+  }
+  .page4{
+    min-height: 1368px;
+    h1{
+      color: #697b8c;
+    }
+  }
+  .footer-wrap {
+    padding: 56px 0 0;
+    text-align: center;
+    .footer-item-col:nth-child(2n) {
+      display: none;
+    };
+    .footer-item {
+      margin-bottom: 48px;
+      text-align: center;
+    }
+  }
+  .footer-bottom {
+    text-align: center;
+    padding: 16px 0;
+    span {
+      display: block;
+    }
+    .mobile-hide {
+      display: none;
+    }
+  }
+}

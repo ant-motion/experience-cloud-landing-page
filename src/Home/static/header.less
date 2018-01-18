@@ -1,0 +1,60 @@
+@import './default';
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  .nav {
+    max-width: 424px;
+    text-align: center;
+    margin: auto;
+    &-title {
+      display: block;
+      padding-top: 22px;
+      border-top: 2px solid transparent;
+      transition: border .3s @ease-out;
+      color: #fff;
+      cursor: pointer;
+      &:hover {
+        border-top-color: #fff;
+      }
+    }
+  }
+}
+
+.header-tip-wrap {
+  .ant-tooltip-arrow {
+    border-bottom-color: rgba(1, 24, 116, .96);
+  }
+  .ant-tooltip-inner {
+    background-color: rgba(1, 24, 116, .96);
+    box-shadow: 0 8px 16px #001b72;
+    padding: 0;
+    max-width: none;
+    overflow: hidden;
+    .tip-block {
+      display: flex;
+      align-items: center;
+      padding: 26px;
+      min-width: 296px;
+      transition: background .3s @ease-in-out;
+      background: rgba(1, 24, 116, 0);
+      .tip-img {
+        display: inline-block;
+      }
+      .tip-content {
+        display: inline-block;
+        color: #fff;
+        margin-left: 16px;
+        line-height: 22px;
+        >div {
+          opacity: 0.65;
+          font-size: 12px;
+          line-height: 20px;
+        }
+      }
+      &:hover{
+        background-color: rgb(1, 24, 116);
+      }
+    }
+  }
+}
