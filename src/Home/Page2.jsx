@@ -59,7 +59,7 @@ export default class Design extends React.PureComponent {
     const { isMobile } = this.props;
     const children = pageData.map((item, i) => {
       const colProps = {
-        lg: item.full ? 24 : 8, sm: 24, xs: 24,
+        md: item.full ? 24 : 8, xs: 24,
       };
       return (
         <Col {...colProps} key={i.toString()} className="page2-item-wrapper">

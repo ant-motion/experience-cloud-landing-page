@@ -9,7 +9,7 @@ export default function Footer() {
         <Row>
           {
         footer.map((foot, index) => (
-          <Col key={index.toString()} lg={6} sm={24} xs={24} className="footer-item-col">
+          <Col key={index.toString()} md={6} xs={24} className="footer-item-col">
             <div className="footer-item">
               <h2>
                 {foot.icon && <img style={{ marginRight: 16 }} src={foot.icon} alt="img" />}
@@ -35,7 +35,7 @@ export default function Footer() {
       <div className="footer-bottom">
         <div className="page">
           <Row>
-            <Col lg={4} sm={24} style={{ textAlign: 'left' }} className="mobile-hide">
+            <Col md={4} xs={24} style={{ textAlign: 'left' }} className="mobile-hide">
               <a
                 href="https://weibo.com/p/1005056420205486"
                 rel="noopener noreferrer"
@@ -45,7 +45,7 @@ export default function Footer() {
               诚征英才
               </a>
             </Col>
-            <Col lg={20} sm={24}>
+            <Col md={20} xs={24}>
               <span
                 className="mobile-hide"
                 style={{ lineHeight: '16px', paddingRight: 12, marginRight: 11 }}
